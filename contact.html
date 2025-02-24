@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -275,15 +274,15 @@
             <div class="col-md-6">
                   <form id="form-contact1" class="autoheight">
                               <div class="form-group user-name">
-                                  <input type="text" class="form-control" required id="name-contact-1" placeholder="Your Name">
+                                  <input type="text" class="form-control" required id="name-contact-1" name="user_name" placeholder="Your Name">
                               </div>
 
                               <div class="form-group user-email">
-                                  <input type="email" class="form-control" required id="email-contact" placeholder="Your Email">
+                                  <input type="email" class="form-control" required id="email-contact" name="user_email" placeholder="Your Email">
                               </div>
                           
                               <div class="form-group user-message">
-                                  <textarea class="form-control" required id="message-contact" placeholder="Your Message"></textarea>
+                                  <textarea class="form-control" required id="message-contact" name="message" placeholder="Your Message"></textarea>
                                   <div class="success" id="mail_success">Thank you. Your message has been sent</div>
                                   <div class="error" id="mail_failed">Error, email not sent</div>
                               </div>
@@ -474,9 +473,12 @@ natural materials.
   <script  src="js/velocity.min.js"></script>
   <!-- velocity  -->
   <script  src="js/lightgallery.js"></script>
+  <!-- Add before other scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <!-- main js -->
   <script  src="js/sticky.js"></script>
   <script src="js/on3step.js"></script>
   <script src="js/plugin-form.js"></script>
+  <script src="js/contact-form.js"></script>
   </body>
 </html>
